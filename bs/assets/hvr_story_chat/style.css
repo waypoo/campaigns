@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "UniNeueHeavy";
+  src: url("UniNeueHeavy.woff") format('woff');
+}
+
+.apps-creative-video {
+  border-radius: 10px;
+}
+
+.apps-video-wrapper {
+  height: auto;
+  min-width: unset;
+}
+
+.expand.mobile .apps-video-wrapper {
+  height: 100%;
+}
+
+.top-vidcta-container {
+  display: none;
+}
+
+.expand .top-vidcta-container {
+  display: block;
+}
+
+.float-to-right {
+  display: none;
+}
+
+.expand.mobile .controls_wrapper {
+  bottom: 10px;
+}
+
+.top-vidcta-container {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controllers-container {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.expand.mobile .top-vidcta-container {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.expand.mobile .controllers-container {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* ===== Chat Bot Invitation Styles ===== */
+
+body,html {
+  max-height:100%;
+  overflow:hidden;
+}
+
+.bs-invitation-container {
+  display:block;
+  position: absolute;
+  width:100%;
+  aspect-ratio: 120 / 213;
+  margin:0;
+  padding:0;
+  top:0;
+  font-family:UniNeueHeavy, sans-serif;
+  font-size:16px;
+}
+.bs-invitation-container .small-background {
+  display:block;
+  position: relative;
+  width:100%;
+  height:auto;
+}
+@keyframes chatBotProfile---Animation {
+	0%,100% {transform: scale(1,1) translateZ(0);}
+	50% {transform: scale(0.95,0.95) translateZ(0);}
+}
+@-webkit-keyframes chatBotProfile---Animation {
+	0%,100% {-webkit-transform: scale(1,1) translateZ(0);}
+	50% {-webkit-transform: scale(0.95,0.95) translateZ(0);}
+}
+.bs-invitation-container .small-profile-icon {
+  background-color:#efefef;
+  display:block;
+  position: absolute;
+  width:60%;
+  padding-bottom:60%;
+  border-radius:50%;
+  overflow:hidden;
+  left:20.1%;
+  top:31%;
+  box-shadow:2px 2px 2px rgba(0,0,0,.5);
+}
+.shrinked.bs-invitation-container .small-profile-icon {
+  animation:chatBotProfile---Animation 0.5s 0.25s ease infinite;
+  -webkit-animation:chatBotProfile---Animation 0.5s 0.25s ease infinite;
+}
+.bs-invitation-container .small-profile-icon > img {
+  border-radius:inherit;
+  display:block;
+  position: absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+@keyframes chatBotRing---Animation {
+	0% {transform: scale(0,0) translateZ(0);opacity:1;}
+	25% {transform: scale(1,1) translateZ(0);opacity:1;}
+  75%,100% {transform: scale(1.1,1.1) translateZ(0);opacity:0;}
+}
+@-webkit-keyframes chatBotRing---Animation {
+	0% {-webkit-transform: scale(0,0) translateZ(0);opacity:1;}
+	25% {-webkit-transform: scale(1,1) translateZ(0);opacity:1;}
+  75%,100% {-webkit-transform: scale(1.1,1.1) translateZ(0);opacity:0;}
+}
+.bs-invitation-container .ring-profile-icon {
+  background-color:transparent;
+  position:absolute;
+  width:80%;
+  padding-bottom:80%;
+  border-radius:50%;
+  left:10.4%;
+  top:25.2%;
+  box-shadow:inset 0 0 0 4px #ffffff;
+}
+.shrinked.bs-invitation-container .ring-profile-icon {
+  animation:chatBotRing---Animation 1s 0.25s ease infinite;
+  -webkit-animation:chatBotRing---Animation 1s 0.25s ease infinite;
+}
+.bs-invitation-container .notification-icon {
+  background-color:#2196f3;
+  position:absolute;
+  width:28%;
+  padding-bottom:28%;
+  border-radius:50%;
+  left:32%;
+  top:55.9%;
+  border:5px solid #f6194a;
+}
+.bs-invitation-container .notification-icon > .dots {
+  display:inline-block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  vertical-align:middle;
+	text-align:center;
+	margin:0% auto 0 auto;
+}
+@-webkit-keyframes loading-animation-wave {30% {transform: translateY(-10px);}}
+@keyframes loading-animation-wave {30% {transform: translateY(-10px);}}
+.bs-invitation-container .notification-icon > .dots > .dot {
+	position:relative;
+	background-color:#fff;
+	/*border:2px solid #aaa;*/
+	display:inline-block;
+	padding-bottom:15%;
+	width:15%;
+  top:20%;
+	margin:auto 4%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	-webkit-animation-duration:0.9s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count:infinite;
+	animation-duration:0.9s;
+	animation-timing-function: ease-out;
+	animation-iteration-count:infinite;
+}
+.bs-invitation-container .notification-icon > .dots > .dot:nth-child(2) {-webkit-animation-delay: -0.7s;animation-delay: -0.7s;}
+.bs-invitation-container .notification-icon > .dots > .dot:last-child {-webkit-animation-delay: -0.5s;animation-delay: -0.5s;}
+
+.shrinked.bs-invitation-container .notification-icon > .dots > .dot {
+	-webkit-animation-name:loading-animation-wave;
+  animation-name:loading-animation-wave;
+}
+@-webkit-keyframes chatBotCTASlideUp {
+  0% {
+      -webkit-transform: translateY(150%) translateZ(0.1px);
+  } 
+  50% {
+      -webkit-transform: translateY(-30%) translateZ(0.1px);
+  }
+  100% {
+      -webkit-transform: translateY(0%) translateZ(0.1px);
+  }
+}
+@keyframes chatBotCTASlideUp {
+  0% {
+    transform: translateY(150%) translateZ(0.1px);
+} 
+50% {
+    transform: translateY(-30%) translateZ(0.1px);
+}
+100% {
+    transform: translateY(0%) translateZ(0.1px);
+}
+}
+@-webkit-keyframes chatBotCTABounce {
+  0%, 100% {
+      -webkit-transform: translateY(0px) translateZ(0.1px);
+  }
+  50% {
+      -webkit-transform: translateY(-15%) translateZ(0.1px);
+  }
+}
+@keyframes chatBotCTABounce {
+  0%, 100% {
+      transform: translateY(0px) translateZ(0.1px);
+  }
+  50% {
+      transform: translateY(-15%) translateZ(0.1px);
+  }
+}
+.bs-invitation-container .cta-chatnow {
+  background-color:#ffffff;
+  position:absolute;
+  width:74%;
+  height:1.4em;
+  padding:4.8%;
+  left:8.1%;
+  top:80.2%;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:2px 2px 2px rgba(0,0,0,.5);
+  font-family:inherit;
+  font-size:1em;
+  line-height:1.4em;
+  color:#f6194a;
+  opacity:0;
+  -webkit-transform: translateY(150%) translateZ(0.1px);
+  transform: translateY(150%) translateZ(0.1px);
+}
+.shrinked.bs-invitation-container .cta-chatnow {
+  opacity:1;
+  transition: opacity 0.1s 0.3s ease;
+  animation: chatBotCTASlideUp 0.3s 1s ease forwards, chatBotCTABounce .28s 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+	-webkit-animation: chatBotCTASlideUp 0.3s 1s ease forwards, chatBotCTABounce .28s 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes chatBotArrowAnimation {
+	0%,100% {transform: translateX(0%) translateZ(0);}
+	50% {transform: translateX(30%) translateZ(0);}
+}
+@-webkit-keyframes chatBotArrowAnimation {
+	0%,100% {-webkit-transform: translateX(0%) translateZ(0);}
+	50% {-webkit-transform: translateX(30%) translateZ(0);}
+}
+.bs-invitation-container .cta-chatnow::after {
+  content:"";
+  position:relative;
+  display:inline-block;
+  width:12px;
+  height:12px;
+  top:15%;
+  margin-left:5px;
+  padding:2px 0;
+  background-image:url('arrow.svg');
+  background-position:50% 50%;
+  background-size:12px 12px;
+  background-repeat:no-repeat;
+}
+.shrinked.bs-invitation-container .cta-chatnow::after {
+  animation: chatBotArrowAnimation 0.5s linear infinite;
+	-webkit-animation: chatBotArrowAnimation 0.5s linear infinite;
+}
+
+.expand .bs-invitation-container, .shrink .bs-invitation-container .cta-chatnow, 
+.shrink .bs-invitation-container .ring-profile-icon, .shrink .bs-invitation-container .notification-icon {
+  visibility:hidden;
+}
+.shrink .bs-invitation-container .small-profile-icon {
+  width:100%;
+  padding-bottom:100%;
+  left:0;
+  top:0;
+  transition: width 0.5s ease, left 0.5s ease, top 0.5s ease;
+}
+
+/* ===== Chat Bot Expand Styles ===== */
+
+.innity-apps-story-content {
+  position:relative;
+  width:100%;
+  padding-bottom:177.8125%;
+  left:0;
+  top:0;
+  opacity:0;
+  transition:opacity 0.3s ease;
+  visibility:hidden;
+}
+.expand .innity-apps-story-content {
+  opacity:1;
+  visibility:visible;
+}
+
+.innity-apps-story-content > .background {
+  display:block;
+  position:relative;
+  width:100%;
+  left:0;
+  top:0;
+  margin:0 !important;
+  pointer-events: none;
+}
+
+.answer:before {
+    border: 3px solid white;
+}
+.answer:hover {
+    background-color: #2792f6;
+}
+.answer:hover:before {
+    color: white;
+    border: 1px solid #2792f6;
+}
